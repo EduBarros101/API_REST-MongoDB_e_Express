@@ -40,7 +40,7 @@ class LivroController {
 
     livros.findByIdAndUpdate(id, { $set: req.body }, (err) => {
       if (!err) {
-        res.status(200).send({ message: 'Licro atualizado com sucesso.' })
+        res.status(200).send({ message: 'Livro atualizado com sucesso.' })
       } else {
         res.status(500).send({ message: err.message })
       }
