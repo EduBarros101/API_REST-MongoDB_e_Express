@@ -10,17 +10,6 @@ db.once('open', () => {
 const app = express()
 app.use(express.json())
 
-// const livros = [
-//   {
-//     id: 1,
-//     titulo: 'Senhor dos Anéis',
-//   },
-//   {
-//     id: 2,
-//     titulo: 'O Hobbit',
-//   },
-// ]
-
 app.get('/', (req, res) => {
   res.status(200).send('Curso de Node.')
 })
