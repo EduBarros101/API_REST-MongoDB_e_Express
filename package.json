@@ -3,11 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "node --watch server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Eduardo Barros",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongodb": "^5.5.0",
+    "mongoose": "^6.2.6"
+  }
 }
